@@ -25,7 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${playfair.variable} font-sans text-pharma-fg antialiased`}>
+      <body className={`${dmSans.variable} ${playfair.variable} font-sans antialiased`}>
+        {/* الـ Provider لازم يغلف الـ children بالكامل */}
         <CartProvider>
           {children}
         </CartProvider>
